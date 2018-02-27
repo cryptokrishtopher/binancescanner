@@ -39,44 +39,40 @@ If you need any help you can find me on:
 ### Roadmap
 
 binancescanner is currently in early testing stages but will be expanded.
-    - Add docstrings
-    - Graceful exception handling
-    - Command line arguments for TRADING PAIR and THRESHOLDS
-	- Remove the need for authentication
+- Add docstrings
+- Graceful exception handling
+- Command line arguments for TRADING PAIR and THRESHOLDS
+- Remove the need for authentication
 
 ### traderstoolkit
-> **testing for public release*
+The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
 
+> **testing for public release*
 > ***in development*
 
-traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
-## BITFINEX ONLY
+#### BITFINEX ONLY
 - BFtrader.py* - multiple trades, single currency trading bot
 
 - BFarbv1.py* - arbitrage calculator for multiple currencies
 
 - BFarbv2.py** - arbitrage calculator for multiple currencies with built-in trader
 
-***
-
-## BINANCE ONLY
+#### BINANCE ONLY
 - BIscanner.py - eyes everywhere! price and volume scanner with customizable threshold notifications
 
 - BIarbv1.py** - arbitrage calculator for multiple currencies
 
 - BIarbv2.py** - arbitrage calculator for multiple currencies with built-in trader
 
-***
-
-## BITMEX ONLY
+#### BITMEX ONLY
 - BMtrader.py** - single trade, single currency (XBTUSD) trading bot
 
-## GLOBAL
+#### GLOBAL
 - sentiment.py* - configurable real time sentiment analysis of tweets associated with particular cryptocurrencies (susceptible to spam tweets/bots)
 
 ### Donate
 
-If this library helped you out feel free to donate. 
+If this library helped you out feel free to donate:
 
 - ETH: 0x1f9145dA965506e41924460Dd86E60ce1083be6c
 - LTC: MDfztCZvet4jGFFUbi8TwNts3uayZmGebJ
