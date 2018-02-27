@@ -5,14 +5,9 @@ Eyes everywhere! binancescanner is a price and volume scanner with customizable 
 
 ### Optional Configuration
 
-1. [Signup](https://www.binance.com/?ref=13223626) for Binance
-1. Enable Two-factor Authentication
-1. Go API Center, [Create New](https://www.binance.com/userCenter/createApi.html) Api Key
-
-        [✓] Read Info [ ] Enable Trading [ ] Enable Withdrawals
-
-1. Add API keys to BIscanner.py
-1. Change trading pair from BTC to USDT, ETH or BNB
+1. Change trading pair (from BTC to USDT, ETH or BNB)
+1. Change volume threshold (in BTC)
+1. Change price and volume difference thresholds (in percentage)
 
 ### Requirements
    
