@@ -26,7 +26,7 @@ Using pip you will need to run the following:
     python BIscanner.py
 
 ### Issues
-    None as of yet.
+    Running on Linux or Mac crashes due to colorama
 
 ### Support
 If you need any help you can find me on:
