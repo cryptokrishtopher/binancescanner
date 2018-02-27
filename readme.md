@@ -36,6 +36,7 @@ If you need any help you can find me on:
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
 - Add instructions for no0bs
+- Improve triggering conditions for notifications
 - Requirements file
 - Docstrings
 - Graceful exception handling
