@@ -15,7 +15,7 @@ Eyes everywhere! binancescanner is a price and volume scanner with customizable 
 	
     Python 3.6
         import time
-		import sys
+        import sys
         import binance
         import twisted
         import colorama
