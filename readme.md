@@ -40,6 +40,7 @@ binancescanner is currently in early testing stages but will be expanding soon:
 - Docstrings
 - Graceful exception handling
 - Command line arguments for TRADING PAIR and THRESHOLDS
+- Test colorama on Linux and Mac
 
 ## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
