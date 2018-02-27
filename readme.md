@@ -32,18 +32,16 @@ If you need any help you can find me on:
 - Telegram: @krishtopher
 
 ### Roadmap
-
-binancescanner is currently in early testing stages but will be expanded.
-- Add docstrings
+binancescanner is currently in early testing stages but will be expanding soon:
+- Adding docstrings
 - Graceful exception handling
-- Command line arguments for TRADING PAIR and THRESHOLDS
-- Remove the need for authentication
+- Adding command line arguments for TRADING PAIR and THRESHOLDS
 
 ## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
 
 > **testing for public release*
-> ***in development*
+> *  **in development*
 
 #### BITFINEX ONLY
 - BFtrader.py* - multiple trades, single currency trading bot
