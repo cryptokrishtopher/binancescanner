@@ -3,9 +3,9 @@
 
 >DISCLAIMER:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
-Eyes everywhere! binancescanner is a price and volume scanner with customizable threshold notifications. It's good for monitoring fast moving markets. One part of the traderstoolkit coming soon.
+binancescanner is a price and volume scanner with customizable threshold notifications written in Python 3. Eyes everywhere for monitoring fast moving markets! One part of the traderstoolkit coming soon.
 
-### Configuration (Optional!)
+### (Optional!) Configuration 
 
 1. Change trading pair (from BTC to USDT, ETH or BNB)
 1. Change volume threshold (in BTC)
