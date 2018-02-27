@@ -1,5 +1,6 @@
 # binancescanner
->DISCLAIMER:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability.
+>ATTENTION: THIS IS FREE SOFTWARE. YOU SHOULD NEVER PAY FOR IT.
+>DISCLAIMER:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
 Eyes everywhere! binancescanner is a price and volume scanner with customizable threshold notifications. It's good for monitoring fast moving markets. One part of the traderstoolkit coming soon.
 
@@ -12,13 +13,10 @@ Eyes everywhere! binancescanner is a price and volume scanner with customizable 
 ### Requirements
    
     High-speed Internet connection
-	
     Python 3.6
-        import time
-        import sys
-        import binance
-        import twisted
-        import colorama
+    $ binance
+    twisted
+    colorama
 
 ### Usage
     python BIscanner.py

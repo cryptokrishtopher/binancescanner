@@ -1,3 +1,6 @@
+###THIS IS FREE SOFTWARE. YOU SHOULD NEVER PAY FOR IT.
+###DISCLAIMER: I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability.
+
 import time
 import sys
 from binance.websockets import BinanceSocketManager
