@@ -33,10 +33,10 @@ If you need any help you can find me on:
 
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
-- Add requirements file
-- Adding docstrings
+- Requirements file
+- Docstrings
 - Graceful exception handling
-- Adding command line arguments for TRADING PAIR and THRESHOLDS
+- Command line arguments for TRADING PAIR and THRESHOLDS
 
 ## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
