@@ -43,7 +43,7 @@ binancescanner is currently in early testing stages but will be expanding soon:
 
 ### Noob Guide
 1. Install python 3 and pip as shown [here](https://matthewhorne.me/how-to-install-python-and-pip-on-windows-10/)
-1. Install the required modules listed in the readme above within pip 
+1. Install the required modules listed above using pip 
 1. If correctly installed, you should be able to double click BIscanner.py to run it
 
 ## traderstoolkit
