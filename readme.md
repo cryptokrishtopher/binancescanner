@@ -44,7 +44,7 @@ binancescanner is currently in early testing stages but will be expanded.
 - Command line arguments for TRADING PAIR and THRESHOLDS
 - Remove the need for authentication
 
-### traderstoolkit
+## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
 
 > **testing for public release*
@@ -70,7 +70,7 @@ The traderstoolkit is a collection of scripts and tools to allow easier trading.
 #### GLOBAL
 - sentiment.py* - configurable real time sentiment analysis of tweets associated with particular cryptocurrencies (susceptible to spam tweets/bots)
 
-### Donate
+## Donate
 
 If this library helped you out feel free to donate:
 
