@@ -16,7 +16,7 @@ binancescanner is a price and volume scanner with customizable threshold notific
     High-speed Internet connection
     Python 3.6
 	
-Using pip you will need to install the following:
+Using pip you will need to run the following:
 
     $ pip install binance
     $ pip install twisted
@@ -35,6 +35,7 @@ If you need any help you can find me on:
 
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
+- Add instructions for no0bs
 - Requirements file
 - Docstrings
 - Graceful exception handling
