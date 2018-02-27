@@ -42,6 +42,12 @@ binancescanner is currently in early testing stages but will be expanding soon:
 - Command line arguments for TRADING PAIR and THRESHOLDS
 - Test colorama on Linux and Mac
 
+### Noob Guide
+1. Install python 3
+1. Install pip in python 3
+1. Install the required modules listed in the readme above within pip 
+1. If correctly installed, you should be able to double click BIscanner.py to run it
+
 ## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
 
