@@ -3,7 +3,7 @@
 
 Eyes everywhere! binancescanner is a price and volume scanner with customizable threshold notifications. It's good for monitoring fast moving markets. One part of the traderstoolkit coming soon.
 
-### Optional Configuration
+### Configuration (Optional!)
 
 1. Change trading pair (from BTC to USDT, ETH or BNB)
 1. Change volume threshold (in BTC)
