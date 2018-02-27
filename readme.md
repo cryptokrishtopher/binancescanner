@@ -1,7 +1,5 @@
 # binancescanner
->ATTENTION: THIS IS FREE SOFTWARE. YOU SHOULD NEVER PAY FOR IT.
-
->DISCLAIMER:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
+>Disclaimer:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
 binancescanner is a price and volume scanner with customizable threshold notifications written in Python 3. Eyes everywhere for monitoring fast moving markets! One part of the traderstoolkit coming soon.
 
@@ -21,7 +19,7 @@ Using pip you will need to run the following:
     $ pip install binance
     $ pip install twisted
     $ pip install colorama
-
+	
 ### Usage
     python BIscanner.py
 
@@ -44,8 +42,7 @@ binancescanner is currently in early testing stages but will be expanding soon:
 - Test colorama on Linux and Mac
 
 ### Noob Guide
-1. Install python 3
-1. Install pip in python 3
+1. Install python 3 and pip as shown [here](https://matthewhorne.me/how-to-install-python-and-pip-on-windows-10/)
 1. Install the required modules listed in the readme above within pip 
 1. If correctly installed, you should be able to double click BIscanner.py to run it
 
