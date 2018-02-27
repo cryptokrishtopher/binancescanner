@@ -42,7 +42,7 @@ binancescanner is currently in early testing stages but will be expanding soon:
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
 
 > **testing for public release*
-> *  **in development*
+> ***in development*
 
 #### BITFINEX ONLY
 - BFtrader.py* - multiple trades, single currency trading bot
