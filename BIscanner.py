@@ -107,7 +107,7 @@ def process_message(msg):
 							difference_to_color(priceDiff)
 							print(Fore.RED)
 							print(Back.WHITE)
-							print(flag, sym, pDiff, vDiff, vol, sep = " || ")
+							print(flag, sym, pDiff, vDiff, vol, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = " || ")
 							print(Back.BLACK)
 						elif(priceDiff > ONE_S_PRICE_DIFFERENCE_THRESHOLD and x.volume > MINIMUM_VOLUME_THRESHOLD):
 							flag = "PRICE!"
@@ -115,7 +115,7 @@ def process_message(msg):
 							pDiff = "DIFF: " + str(round(priceDiff, 1))
 							vol = "VOL: " + str(round(x.volume, 1))
 							difference_to_color(priceDiff)
-							print(flag, sym, pDiff, vol, sep = " || ")
+							print(flag, sym, pDiff, vol,'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol), sep = " || ")
 						elif(volDiff > VOLUME_DIFFERENCE_THRESHOLD and x.volume > MINIMUM_VOLUME_THRESHOLD):
 							flag = "VOLUME!"
 							sym = "SYM: " + str(stored_currency.symbol)
@@ -131,7 +131,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								ten_second_pDiff = "DIFF: " + str(round(ten_second_price_diff, 1))
 								difference_to_color(ten_second_price_diff)
-								print(flag, sym, ten_second_pDiff, sep = "  ||  ")
+								print(flag, sym, ten_second_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.ten_sec_start_bid_price = x.bid_price
 							stored_currency.ten_sec_time_stamp = ct
 							
@@ -142,7 +142,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								fifteen_second_pDiff = "DIFF: " + str(round(fifteen_second_price_diff, 1))
 								difference_to_color(fifteen_second_price_diff)
-								print(flag, sym, fifteen_second_pDiff, sep = "  ||  ")
+								print(flag, sym, fifteen_second_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.fifteen_sec_start_bid_price = x.bid_price
 							stored_currency.fifteen_sec_time_stamp = ct
 							
@@ -153,7 +153,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								twenty_second_pDiff = "DIFF: " + str(round(twenty_second_price_diff, 1))
 								difference_to_color(twenty_second_price_diff)
-								print(flag, sym, twenty_second_pDiff, sep = "  ||  ")
+								print(flag, sym, twenty_second_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.twenty_sec_start_bid_price = x.bid_price
 							stored_currency.twenty_sec_time_stamp = ct
 						
@@ -164,7 +164,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								thirty_second_pDiff = "DIFF: " + str(round(thirty_second_price_diff, 1))
 								difference_to_color(thirty_second_price_diff)
-								print(flag, sym, thirty_second_pDiff, sep = "  ||  ")
+								print(flag, sym, thirty_second_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.thirty_sec_start_bid_price = x.bid_price
 							stored_currency.thirty_sec_time_stamp = ct
 						
@@ -175,7 +175,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								one_min_pDiff = "DIFF: " + str(round(one_min_price_diff, 1))
 								difference_to_color(one_min_price_diff)
-								print(flag, sym, one_min_pDiff, sep = "  ||  ")
+								print(flag, sym, one_min_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.one_min_start_bid_price = x.bid_price
 							stored_currency.one_min_time_stamp = ct
 						
@@ -186,7 +186,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								two_min_pDiff = "DIFF: " + str(round(two_min_price_diff, 1))
 								difference_to_color(two_min_price_diff)
-								print(flag, sym, two_min_pDiff, sep = "  ||  ")
+								print(flag, sym, two_min_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.two_min_start_bid_price = x.bid_price
 							stored_currency.two_min_time_stamp = ct
 						
@@ -197,7 +197,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								five_min_pDiff = "DIFF: " + str(round(five_min_price_diff, 1))
 								difference_to_color(five_min_price_diff)
-								print(flag, sym, five_min_pDiff, sep = "  ||  ")
+								print(flag, sym, five_min_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.five_min_start_bid_price = x.bid_price
 							stored_currency.five_min_time_stamp = ct
 							
@@ -208,7 +208,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								ten_min_pDiff = "DIFF: " + str(round(ten_min_price_diff, 1))
 								difference_to_color(ten_min_price_diff)
-								print(flag, sym, ten_min_pDiff, sep = "  ||  ")
+								print(flag, sym, ten_min_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.ten_min_start_bid_price = x.bid_price
 							stored_currency.ten_min_time_stamp = ct
 							
@@ -219,7 +219,7 @@ def process_message(msg):
 								sym = "SYM: " + str(stored_currency.symbol)
 								fifteen_min_pDiff = "DIFF: " + str(round(fifteen_min_price_diff, 1))
 								difference_to_color(fifteen_min_price_diff)
-								print(flag, sym, fifteen_min_pDiff, sep = "  ||  ")
+								print(flag, sym, fifteen_min_pDiff, 'https://www.tradingview.com/chart/?symbol=Binance:'+str(stored_currency.symbol),sep = "  ||  ")
 							stored_currency.fifteen_min_start_bid_price = x.bid_price
 							stored_currency.fifteen_min_time_stamp = ct
 							
