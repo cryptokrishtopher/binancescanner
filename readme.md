@@ -16,7 +16,7 @@ binancescanner is a price and volume scanner with customizable threshold notific
 	
 Using pip you will need to run the following:
 
-    $ pip install binance
+    $ pip install python-binance
     $ pip install twisted
     $ pip install colorama
 	
