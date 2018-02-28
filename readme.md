@@ -1,9 +1,8 @@
 # binancescanner
 binancescanner is a price and volume scanner with customizable threshold notifications written in Python 3. Eyes everywhere for monitoring fast moving markets! One part of the traderstoolkit coming soon.
+>Disclaimer:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
 ![alt tag](https://i.imgur.com/sNDRw25.png "")
-
->Disclaimer:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
 ### (Optional!) Configuration 
 
