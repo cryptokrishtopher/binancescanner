@@ -1,6 +1,8 @@
 # binancescanner
 binancescanner is a price and volume scanner with customizable threshold notifications written in Python 3. Eyes everywhere for monitoring fast moving markets! One part of the traderstoolkit coming soon.
 
+![alt tag](https://i.imgur.com/sNDRw25.png "")
+
 >Disclaimer:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
 ### (Optional!) Configuration 
@@ -21,13 +23,14 @@ You will need to run the following:
     $ py -m pip install colorama
 	
 ### Usage
-    python BIscanner.py
+    $ py BIscanner.py
 
 ### Issues
     Running on Linux or Mac crashes due to colorama
-
-### Support
 If you need any help join the dedicated [discord server](https://discord.gg/S7hTpqy)
+
+### Supporting
+If you want to contribute please fork and submit a pull request.
 
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
