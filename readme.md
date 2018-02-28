@@ -27,9 +27,7 @@ Using pip you will need to run the following:
     Running on Linux or Mac crashes due to colorama
 
 ### Support
-If you need any help you can find me on:
-- Discord: @krishtopher
-- Telegram: @krishtopher
+If you need any help join the dedicated [discord server](https://discord.gg/S7hTpqy)
 
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
@@ -42,9 +40,12 @@ binancescanner is currently in early testing stages but will be expanding soon:
 - Test colorama on Linux and Mac
 
 ### Noob Guide
-1. Install python 3 and pip as shown [here](https://matthewhorne.me/how-to-install-python-and-pip-on-windows-10/)
-1. Install the required modules listed above using pip 
-1. If correctly installed, you should be able to double click BIscanner.py to run it
+1. Install git, python 3.6, pip, [MS Visual C++ 14.0 2015](https://go.microsoft.com/fwlink/?LinkId=691126) and the required modules
+1. Create a folder anywhere (for example: Desktop)
+1. Open CMD and cd to that folder
+1. Clone repo to folder using git
+1. Cd into the cloned repo
+1. Run scanner
 
 ## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
