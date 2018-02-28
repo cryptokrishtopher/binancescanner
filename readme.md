@@ -1,7 +1,7 @@
 # binancescanner
->Disclaimer:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
-
 binancescanner is a price and volume scanner with customizable threshold notifications written in Python 3. Eyes everywhere for monitoring fast moving markets! One part of the traderstoolkit coming soon.
+
+>Disclaimer:  I am in no way affiliated with Binance, use at your own risk. There are no warranties or guarantees expressed or implied. You assume all responsibility and liability. 
 
 ### (Optional!) Configuration 
 
@@ -14,11 +14,11 @@ binancescanner is a price and volume scanner with customizable threshold notific
     High-speed Internet connection
     Python 3.6
 	
-Using pip you will need to run the following:
+You will need to run the following:
 
-    $ pip install python-binance
-    $ pip install twisted
-    $ pip install colorama
+    $ py -m pip install python-binance
+    $ py -m pip install twisted
+    $ py -m pip install colorama
 	
 ### Usage
     python BIscanner.py
@@ -31,7 +31,7 @@ If you need any help join the dedicated [discord server](https://discord.gg/S7hT
 
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
-- Add instructions for no0bs
+- Add instructions for no0bs (COMPLETED)
 - Improve triggering conditions for notifications
 - Requirements file
 - Docstrings
@@ -41,11 +41,11 @@ binancescanner is currently in early testing stages but will be expanding soon:
 
 ### Noob Guide
 1. Install git, python 3.6, pip, [MS Visual C++ 14.0 2015](https://go.microsoft.com/fwlink/?LinkId=691126) and the required modules
-1. Create a folder anywhere (for example: Desktop)
-1. Open CMD and cd to that folder
+1. Create a folder anywhere (for example: desktop)
+1. Open command prompt and cd to that folder
 1. Clone repo to folder using git
-1. Cd into the cloned repo
-1. Run scanner
+1. cd into the cloned repo
+1. Run BIscanner.py
 
 ## traderstoolkit
 The traderstoolkit is a collection of scripts and tools to allow easier trading. Each tool will be released standalone as they are completed and the toolkit will be released as a whole at a later date.
