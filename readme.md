@@ -29,7 +29,7 @@ You will need to run the following:
 If you need any help join the dedicated [discord server](https://discord.gg/S7hTpqy)
 
 ### Supporting
-If you want to contribute please fork and submit a pull request.
+If you want to contribute please fork and submit a pull request
 
 ### Roadmap
 binancescanner is currently in early testing stages but will be expanding soon:
