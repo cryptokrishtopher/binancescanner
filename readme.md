@@ -39,7 +39,8 @@ binancescanner is currently in early testing stages but will be expanding soon:
 - Docstrings
 - Graceful exception handling
 - Command line arguments for TRADING PAIR and THRESHOLDS
-- Test colorama on Linux and Mac
+- Test colorama on Linux and Mac (COMPLETED)
+- Only show color-range chart if notifications are posted 
 
 ### Noob Guide
 1. Install git, python 3.6, pip, [MS Visual C++ 14.0 2015](https://go.microsoft.com/fwlink/?LinkId=691126) and the required modules

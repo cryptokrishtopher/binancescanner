@@ -9,57 +9,38 @@ from binance.client import Client
 from twisted.internet import reactor
 from colorama import init, Fore, Back, Style
 import datetime as dt
-t = dt.datetime.now()
-minute_count = 0 
 
-#API KEYS FROM BINANCE.COM (NOT REQUIRED!)
-PUBLIC_API_KEY = ''
-PRIVATE_API_KEY = ''
+DELAY_FOR_COLOR_RANGE = 60															#TIME TO DISPLAY COLOR RANGE CHART
+PUBLIC_API_KEY = ''																	#API KEYS FROM BINANCE.COM (NOT REQUIRED!)
+PRIVATE_API_KEY = ''																#API KEYS FROM BINANCE.COM (NOT REQUIRED!)
+PAIRS = "BTC"																		#BASE TRADING COIN: BTC/ETH/USDT/BNB
+TRADING_VIEW_LINK = 0																#ENABLE TRADING VIEW LINK (DISABLED BY DEFAULT)
+MINIMUM_VOLUME_THRESHOLD = 800.0													#MINIMUM VOLUME THRESHOLD
+ONE_S_PRICE_DIFFERENCE_THRESHOLD = 1.0												#1S PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+TEN_S_PRICE_DIFFERENCE_THRESHOLD = 0.75												#10S PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+FIFTEEN_S_PRICE_DIFFERENCE_THRESHOLD = 1.0											#15S PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+TWENTY_S_PRICE_DIFFERENCE_THRESHOLD = 1.4											#20S PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+THIRTY_S_PRICE_DIFFERENCE_THRESHOLD = 1.8											#30S PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+ONE_M_PRICE_DIFFERENCE_THRESHOLD = 2.1												#1M PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+TWO_M_PRICE_DIFFERENCE_THRESHOLD = 2.5												#2M PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+FIVE_M_PRICE_DIFFERENCE_THRESHOLD = 3.0												#5M PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+TEN_M_PRICE_DIFFERENCE_THRESHOLD = 3.5												#10M PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+FIFTEEN_M_PRICE_DIFFERENCE_THRESHOLD = 4.0											#15M PRICE DIFFERENCE IN PERCENTAGE THRESHOLD
+VOLUME_DIFFERENCE_THRESHOLD = 1.0													#VOLUME DIFFERENCE IN PERCENTAGE THRESHOLD
 
-#TRADING PAIR STRUCTURE:
-#    XXXBTC  (Bitcoin)
-#    XXXETH  (Ethereum)
-#    XXXBNB  (Binance Coin)
-#    XXXUSDT (Tether)
-
-#Specify Base Coin BNB, BTC, ETH, or USDT for Trading Pair
-# PAIRS = "BTC"
-PAIRS = "ETH"
-
-#ENABLE TRADING VIEW LINK (DISABLED BY DEFAULT)
-TRADING_VIEW_LINK = 0
-
-#VOLUME THRESHOLD
-MINIMUM_VOLUME_THRESHOLD = 800.0
-
-#DIFFERENCE IN PERCENTAGE THRESHOLDS
-ONE_S_PRICE_DIFFERENCE_THRESHOLD = 1.0
-TEN_S_PRICE_DIFFERENCE_THRESHOLD = 0.75
-FIFTEEN_S_PRICE_DIFFERENCE_THRESHOLD = 1.0
-TWENTY_S_PRICE_DIFFERENCE_THRESHOLD = 1.4
-THIRTY_S_PRICE_DIFFERENCE_THRESHOLD = 1.8
-ONE_M_PRICE_DIFFERENCE_THRESHOLD = 2.1
-TWO_M_PRICE_DIFFERENCE_THRESHOLD = 2.5
-FIVE_M_PRICE_DIFFERENCE_THRESHOLD = 3.0
-TEN_M_PRICE_DIFFERENCE_THRESHOLD = 3.5
-FIFTEEN_M_PRICE_DIFFERENCE_THRESHOLD = 4.0
-VOLUME_DIFFERENCE_THRESHOLD = 1.0
-
-#Chart to show Colour Coded Values in an ordered scale, from right to left
+T = dt.datetime.now()																#START TIME (DO NOT CHANGE)
 COLOUR_CODED_VALUES = (
-(Fore.BLACK)
-+(Style.NORMAL)
-+(Back.YELLOW + ' diff <= 0.1 ')
-+(Back.WHITE + ' > 0.1 & < 0.8 ')
-+(Back.MAGENTA + ' >= 0.8 & <= 1.4 ')
-+(Back.BLUE + ' > 1.4 & <= 2.5 ')
-+(Back.GREEN + ' > 2.5 & <= 4.0 ')
-+(Back.CYAN + ' > 4.0 & <= 5.0 ')
-+(Back.RED + ' diff > 5.0 ')
-+(Style.RESET_ALL))
-
-#Value in seconds, how often to display COLOUR_CODED_VALUES - Default is 300 sec ( 5 mins )
-COLOUR_CODED_SLEEP = 300
+		(Fore.BLACK)
+		+(Style.NORMAL)
+		+(Back.YELLOW + ' diff <= 0.1 ')
+		+(Back.WHITE + ' > 0.1 & < 0.8 ')
+		+(Back.MAGENTA + ' >= 0.8 & <= 1.4 ')
+		+(Back.BLUE + ' > 1.4 & <= 2.5 ')
+		+(Back.GREEN + ' > 2.5 & <= 4.0 ')
+		+(Back.CYAN + ' > 4.0 & <= 5.0 ')
+		+(Back.RED + ' diff > 5.0 ')
+		+(Style.RESET_ALL)
+	)
 
 class currency_container:
 	def __init__(self, currencyArray):
@@ -304,18 +285,18 @@ if __name__ == "__main__":
 		client = Client(PUBLIC_API_KEY, PRIVATE_API_KEY)
 		bm = BinanceSocketManager(client)
 		conn_key = bm.start_ticker_socket(process_message)
-		print("Initialised successfully!")
 		bm.start()
+		print("Initialised successfully!")
+		print(Style.BRIGHT)
+		print(COLOUR_CODED_VALUES)
 	except:
 		print("Error - exiting...")
 		sys.exit(0)
 
-
-#Timer for COLOUR_CODED_VALUES using COLOUR_CODED_SLEEP variables
+#TIMER TO DISPLAY COLOR RANGE EVERY 
 while True:
-	delta_minutes = (dt.datetime.now() -t).seconds / 60
-	if delta_minutes and delta_minutes != minute_count:
+	delta_minutes = (dt.datetime.now() - T).seconds
+	if delta_minutes >= DELAY_FOR_COLOR_RANGE:
 		print(Style.BRIGHT)
 		print(COLOUR_CODED_VALUES)
-		minute_count = delta_minutes
-	sleep(COLOUR_CODED_SLEEP) 
+	sleep(DELAY_FOR_COLOR_RANGE) 
